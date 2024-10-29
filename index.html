@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <meta
+      name="description"
+      content="this is an e-commerce project for making anis express "
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar start here -->
+    <i class="fa-solid fa-bars fa-2x" id="nav-menu__icon"></i>
+    <nav id="nav-menu" class="hidden">
+        <!-- upper nav -->
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+        <li class="nav__list">
+          <a class="nav__link" href="register.html">Register</a>
+        </li>
+        <li class="nav__list">
+          <a class="nav__link" href="login.html">Login</a>
+        </li>
+        <li class="nav__list">
+          <a class="nav__link" href="index.html">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a class="nav__link" href="profile.html">
+            <img src="images/profile.jpg" alt="" class="profile-img" />
+          </a>
+        </li>
+      </ul>
+
+      <!-- lower nav -->
+       <ul class="nav-lower  flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__brand sagor-express nav__link">Sagor Express</a>
+        </li>
+        <li class="nav__list"><a href="cart.html" class="nav__brand nav__link">
+            <span><i class="fa-solid fa-cart-shopping "></i></span>Cart 2 products - $124.40
+        </a>
+        </li>
+       </ul>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- header start -->
+     <header class="header ">
+        <div class="banner flex-space-around ">
+            <marquee class="banner__title" behavior="" direction="">50%  Off sales going on</marquee>
+            <div class="features flex-space-around">
+                <article class="feature">
+                    <i class="fa-solid fa-truck-fast feature-icon" ></i>
+                    <h3>Hipping within 7 days</h3>
+                </article>
+                <article class="feature">
+                    <i class="fa-brands fa-rocketchat feature-icon"></i>
+                    <h3>Support 24-7</h3>
+                </article>
+                <article class="feature">
+                    <i class="fa-solid fa-credit-card feature-icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+     </header>
+    <!-- header end -->
+
+    <!-- main start here -->
+
+    <main class="flex-center">
+        <div class="sidebar">
+            <!-- categories section -->
+            <section class="categories-section">
+                <h3 class="section-title">
+                    Categories
+                </h3>
+                <ul class="ul-list">
+                    
+                    <li class="list__item">
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone">
+                            phone
+                        </label>
+                        
+                    </li>
+                    <li class="list__item">
+                        <label for="tablet">
+                            <input type="checkbox" name="tablet" id="tablet">
+                            Tablets
+                        </label>
+                        
+                    </li>
+                    <li class="list__item">
+                        <label for="television">
+                            <input type="checkbox" name="television" id="phone">
+                            Televisions
+                        </label>
+                        
+                    </li>
+                    <li class="list__item">
+                        <label for="computer">
+                            <input type="checkbox" name="computer" id="computer">
+                            Computer
+                        </label>
+                        
+                    </li>
+                    <li class="list__item">
+                        <label for="headphone">
+                            <input type="checkbox" name="headphone" id="headphone">
+                            Headphones
+                        </label>
+                        
+                    </li>
+                   
+                </ul>
+            </section>
+            <!-- categories section -->
+            <section class="price-section">
+                <h3 class="section-title">
+                    Price
+                </h3>
+                <ul class="ul-list">
+                    
+                    <li class="list__item">
+                        <label for="price1">
+                            <input type="radio" name="price" id="price1" value="[0,20]">
+                            $0-20
+                        </label>
+                        </li>
+                    <li class="list__item">
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[21,50]">
+                            $21-50
+                        </label>
+                        </li>
+                    <li class="list__item">
+                        <label for="price3">
+                            <input type="radio" name="price" id="price3" value="[51,100]">
+                            $51-100
+                        </label>
+                        </li>
+                    <li class="list__item">
+                        <label for="price4">
+                            <input type="radio" name="price" id="price4" value="[101,500]">
+                            $101-500
+                        </label>
+                        </li>
+                    <li class="list__item">
+                        <label for="price5">
+                            <input type="radio" name="price" id="price5" value="[501,1000]">
+                            $501-1000
+                        </label>
+                        </li>
+                   </ul>
+            </section>
+            <!-- shipping section -->
+            <section class="shipping-section">
+                <h3 class="section-title">
+                    Shipping Options
+                </h3>
+                <ul class="ul-list">
+                    
+                    <li class="list__item">
+                        <label for="free-shipping">
+                            <input type="radio" name="shipping" id="free-shipping" value="free">
+                            Free Shipping
+                        </label>
+                        </li>
+                    <li class="list__item">
+                        <label for="paid-shipping">
+                            <input type="radio" name="shipping" id="paid-shipping" value="paid">
+                            Paid Shipping
+                        </label>
+                        </li>
+                  
+                   </ul>
+            </section>
+        </div>
+        <div class="main-container">
+            <!-- action section start-->
+             <section class="sctions flex-space-around">
+                <div class="sort__actions">
+                    <label for="sort">Sort By :</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most Sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Most cheapest first</option>
+                        <option value="arrival">New arrival first</option>
+                        <option value="discount">Biggest Discount first</option>
+                    </select>
+                </div>
+                <!-- search action -->
+                 <div class="search__actions">
+                    <input type="text" name="search" id="search" placeholder="Search Product">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                 </div>
+             </section>
+            <!-- action section end-->
+
+            <!-- products section start-->
+             <section class="products">
+
+                <!-- card 1- headphone -->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product-img" src="images/product1.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">Sony V4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$225.99</h4>
+                        <p class="product__rating">Rating:4.5/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- card 2- phone-->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>20 in stock</span>
+                        <hr class="hr-design">
+                        <span>11 sold</span>
+                    </div>
+                    <img class="product-img" src="images/phone2.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">I phone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$800</h4>
+                        <p class="product__rating">Rating:5/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- card 3- tab -->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>7 sold</span>
+                    </div>
+                    <img class="product-img" src="images/tab3.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple - Tablet</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$885.99</h4>
+                        <p class="product__rating">Rating:4.0/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- card 4- tv -->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>6 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product-img" src="images/television3.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">Led TV</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$400.50</h4>
+                        <p class="product__rating">Rating:4.2/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- card 5- laptopr -->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>2 in stock</span>
+                        <hr class="hr-design">
+                        <span>12 sold</span>
+                    </div>
+                    <img class="product-img" src="images/laptob4.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">Laptop</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$735.10</h4>
+                        <p class="product__rating">Rating:4.1/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- card 5- laptopr -->
+                <article class="product card">
+                    <div class="bridge">
+                        <span>2 in stock</span>
+                        <hr class="hr-design">
+                        <span>12 sold</span>
+                    </div>
+                    <img class="product-img" src="images/laptob4.jpg" alt="">
+                    <div class="product__body">
+                        <h3 class="product__name">Laptop</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate natus dolores .... <a href="product.html" class="Learn-more">Learn more</a> </p>
+                        <h4 class="product__price">$735.10</h4>
+                        <p class="product__rating">Rating:4.1/5</p>
+                        <button class="btn product__button">Add to Cart</button>
+                    </div>
+                </article>
+
+             </section>
+            <!-- products section end-->
+
+            <section class="pagination">
+                <button class="btn btn-paginattion"><i class="fa-solid fa-less-than"></i></button>
+                <button class="btn btn-paginattion">2</button>
+                <button class="btn btn-paginattion">3</button>
+                <button class="btn btn-paginattion">4</button>
+                <button class="btn btn-paginattion">5</button>
+                <button class="btn btn-paginattion">6</button>
+                <button class="btn btn-paginattion">7</button>
+                <button class="btn btn-paginattion">8</button>
+                <button class="btn btn-paginattion">9</button>
+                <button class="btn btn-paginattion">10</button>
+                <button class="btn btn-paginattion">....</button>
+                <button class="btn btn-paginattion">50</button>
+            </section>
+        </div>
+       
+    </main>
+    <!-- main end here -->
+
+     <!-- footer start here -->
+      <footer class="flex-space-around footer">
+        <div class="footer-des">
+            <label for="subscribe">Subscribe to Newsletter</label>
+            <input type="email"  class="footer__input" name="subscribe" id="subscribe" placeholder="Your email address">
+            <button class="btn btn-subscribe">subscribe</button>
+        </div>
+        <div>
+            &copy;Copyright Sagor Express.All rights reserved
+        </div>
+      </footer>
+     <!-- footer end here -->
+
+     <!-- java script link -->
+      <script src="index.js"></script>
+  </body>
+</html>
